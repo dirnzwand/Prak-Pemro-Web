@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input dan Informasi Data</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <div class="panel input-data-panel">
+            <h2 class="panel-title">Input Data</h2>
+            <form action="#" method="post">
+                
+                <div class="form-group">
+                    <label for="nama_lengkap">NAMA LENGKAP</label>
+                    <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="nama lengkap" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nim">NIM</label>
+                    <input type="text" id="nim" name="nim" placeholder="161616" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="semester">SEMESTER</label>
+                    <input type="number" id="semester" name="semester" value="1" min="1" max="14" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="program_studi">PROGRAM STUDI</label>
+                    <select id="program_studi" name="program_studi" required>
+                        <option value="" disabled selected>-- Pilih --</option>
+                        <option value="TI">Teknik Informatika</option>
+                        <option value="HK">Hukum</option>
+                        <option value="MJ">Manajemen</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" placeholder="email@blablabla.com" required>
+                </div>
+                
+                <button type="submit" class="submit-button">KIRIM DATA</button>
+                
+                <div class="form-message">
+                    Isi data mahasiswa dengan benar!
+                </div>
+            </form>
+        </div>
+         
+        
+        <div class="panel info-pengiriman-panel">
+                <h2 class="panel-title">Informasi Pengiriman</h2>
+                <p class="description">Apa yang terjadi saat Anda klik "Kirim Data"?</p>
+                <ul>
+                    <li><span class="check-icon">✓</span> Data ditampilkan di Console</li>
+                    <li><span class="check-icon">✓</span> Data disimpan di array</li>
+                    <li><span class="check-icon">✓</span> Jumlah data di-update</li>
+                    <li><span class="check-icon">✓</span> Form akan kosong kembali</li>
+                </ul>
+            </div>
+
+        
+        
+        <div class="panel-group-right">
+            
+            <div class="panel table-mahasiswa-panel">
+                <h2 class="panel-title">Table Mahasiswa</h2>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>NAMA</th>
+                            <th>INFO</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Kamala Hanna</td>
+                            <td>
+                                Prodi: MJ <br>
+                                Semester: 1
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Arkana Ismail</td>
+                            <td>
+                                Prodi: TI <br>
+                                Semester: 3
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+</html>
